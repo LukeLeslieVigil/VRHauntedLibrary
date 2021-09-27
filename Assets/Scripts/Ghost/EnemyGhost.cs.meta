@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0e7fe9fd49160314f8ce32f6d2c8a28f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Ghost: {instanceID: 0}
+  - playerTarget: {instanceID: 0}
+  - ISeeYou: {fileID: 8300000, guid: 19fb123519f3e084a99f74ea08daa563, type: 3}
+  - goal: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
