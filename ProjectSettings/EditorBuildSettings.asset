@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: e869446214c617c4c9762906b0130b10
   - enabled: 0
-    path: Assets/Scenes/Game.unity
+    path: Assets/Scenes/Game_old.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
     path: Assets/Scenes/WinMenu.unity
@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/LoseMenu.unity
     guid: 42c439dfcad54b745ad723d7ccd9fc2a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/3DModelExamples.unity
     guid: a6ede3a016862f74184d2ee1e51854e3
   m_configObjects:
