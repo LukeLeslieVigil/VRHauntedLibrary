@@ -19,6 +19,10 @@ public class GhostSight : MonoBehaviour
 
     private void Awake()
     {
+        //When AI awakes, gets the navmesh, the attached sphere collider,
+        //A default location set way off the map so it doesn't immediately chase something,
+        //The player that it will be looking for,
+        //And then sets its last sighting of the player to the far off place so it doesn't start chasing immediately.
         nav = GetComponent<NavMeshAgent>();
         col = GetComponent<SphereCollider>();
         lastPlayerSighting = GameObject.FindGameObjectWithTag("GameController").GetComponent<LastPlayerSighting>();
