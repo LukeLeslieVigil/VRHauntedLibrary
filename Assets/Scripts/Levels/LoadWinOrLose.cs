@@ -14,7 +14,7 @@ public class LoadWinOrLose : MonoBehaviour
             if (targetZone.tag == "WinZone")
             {
                 var timer = FindObjectOfType<Timer>();
-                GameManager.instance.SaveTime((int)(timer.time));
+                //GameManager.instance.SaveTime((int)(timer.time));
                 SceneManager.LoadScene("WinMenu");
             }
             else if (targetZone.tag == "GhostZone")
