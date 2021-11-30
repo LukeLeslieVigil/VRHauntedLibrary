@@ -1730,7 +1730,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1849,6 +1849,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  ISeeYou: {fileID: 0}
 --- !u!114 &7249637037471044925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1864,6 +1865,7 @@ MonoBehaviour:
   FOVAngle: 110
   playerInSight: 0
   lastSighting: {x: 0, y: 0, z: 0}
+  ghostAI: {fileID: 0}
   sphereRadius: 1
 --- !u!1 &7249637037921296127
 GameObject:
@@ -2722,6 +2724,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862920378989246909}
+  - component: {fileID: 7709471858012458299}
+  - component: {fileID: 181483536659217605}
   m_Layer: 14
   m_Name: Body
   m_TagString: Untagged
@@ -2751,3 +2755,28 @@ Transform:
   m_Father: {fileID: 7249637037471044920}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &7709471858012458299
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9164779958003192238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &181483536659217605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9164779958003192238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fcce700f198004ab8965bb6630461d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

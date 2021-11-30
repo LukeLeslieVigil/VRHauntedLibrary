@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KeysToExit : MonoBehaviour
 {
@@ -13,9 +14,13 @@ public class KeysToExit : MonoBehaviour
 
     public int keysCollected = 0;
 
+    private int keysRequired = 3;
+
     private GameObject keyOne;
     private GameObject keyTwo;
     private GameObject keyThree;
+
+    private BoxCollider exitZone;
 
 
     private void SpawnKeys(int num)
@@ -27,6 +32,9 @@ public class KeysToExit : MonoBehaviour
 
     private void Start()
     {
+        exitZone = GetComponent<BoxCollider>();
+        exitZone.enabled = false;
+
         int spawnPoint = Random.Range(0, keyOneSpawnLocation.Length);
 
         SpawnKeys(spawnPoint);
@@ -39,6 +47,17 @@ public class KeysToExit : MonoBehaviour
 
     private void Update()
     {
-        
+        if (keysCollected >= keysRequired)
+        {
+            exitZone.enabled = true;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Player")
+        {
+            SceneManager.LoadScene("WinMenu");
+        }
     }
 }
