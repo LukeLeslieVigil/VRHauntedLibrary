@@ -12,6 +12,7 @@ TagManager:
   - UnlockedDoor
   - PreviousTimes
   - Flashlight
+  - ExitDoors
   layers:
   - Default
   - TransparentFX
