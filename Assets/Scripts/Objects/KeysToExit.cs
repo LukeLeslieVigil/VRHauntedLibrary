@@ -22,7 +22,11 @@ public class KeysToExit : MonoBehaviour
 
     private BoxCollider exitZone;
 
-
+    /// <summary>
+    /// Instantiates a key prefab object at an array of locations,
+    /// each corresponding to the same number in the array.
+    /// </summary>
+    /// <param name="num">The number input of the array.</param>
     private void SpawnKeys(int num)
     {
         keyOne = Instantiate(keyPrefab, keyOneSpawnLocation[num]) as GameObject;
@@ -39,14 +43,19 @@ public class KeysToExit : MonoBehaviour
 
         SpawnKeys(spawnPoint);
 
-        Debug.Log("Keys spawned!");
-        Debug.Log("Key One spawned at: " + keyOne.transform);
-        Debug.Log("Key Two spawned at: " + keyTwo.transform);
-        Debug.Log("Key Three spawned at: " + keyThree.transform);
+        //Debug.Log("Keys spawned!");
+        //Debug.Log("Key One spawned at: " + keyOne.transform);
+        //Debug.Log("Key Two spawned at: " + keyTwo.transform);
+        //Debug.Log("Key Three spawned at: " + keyThree.transform);
     }
 
     private void Update()
     {
+        while(keysCollected > 0)
+        {
+            doorLocks[keysCollected-1].SetActive(false);
+        }
+
         if (keysCollected >= keysRequired)
         {
             exitZone.enabled = true;
