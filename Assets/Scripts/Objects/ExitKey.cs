@@ -14,6 +14,7 @@ public class ExitKey : MonoBehaviour
     public void KeyCollected()
     {
         exitDoor.keysCollected++;
+        exitDoor.doorLocks[exitDoor.keysCollected-1].SetActive(false);
         this.gameObject.SetActive(false);
     }
 }
