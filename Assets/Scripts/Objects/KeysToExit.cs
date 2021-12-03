@@ -51,10 +51,12 @@ public class KeysToExit : MonoBehaviour
 
     private void Update()
     {
-        while(keysCollected > 0)
-        {
-            doorLocks[keysCollected-1].SetActive(false);
-        }
+        //while(keysCollected > 0)
+        //{
+        //    doorLocks[keysCollected-1].SetActive(false);
+        //}
+
+
 
         if (keysCollected >= keysRequired)
         {
