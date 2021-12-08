@@ -8,11 +8,9 @@ TagManager:
   - WinZone
   - GhostZone
   - Key
-  - LockedDoor
-  - UnlockedDoor
-  - PreviousTimes
   - Flashlight
   - ExitDoors
+  - SoundManager
   layers:
   - Default
   - TransparentFX
