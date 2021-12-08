@@ -20,14 +20,16 @@ public class GameSoundManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        AudioSource[] sources = GetComponents<AudioSource>();
-        foreach (AudioSource source in sources)
-        {
-            if (source.clip == null)
-            {
-                SoundEffectAudio = source;
-            }
-        }
+        SoundEffectAudio = GetComponent<AudioSource>();
+
+        //AudioSource[] sources = GetComponents<AudioSource>();
+        //foreach (AudioSource source in sources)
+        //{
+        //    if (source.clip == null)
+        //    {
+        //        SoundEffectAudio = source;
+        //    }
+        //}
     }
 
     public void PlayOneShot(AudioClip clip)
