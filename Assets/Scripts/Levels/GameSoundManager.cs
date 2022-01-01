@@ -8,7 +8,7 @@ public class GameSoundManager : MonoBehaviour
     private AudioSource SoundEffectAudio;
 
     public AudioClip keyCollected;
-
+    public AudioClip keyNearbyClip;
     private void Start()
     {
         if (SoundInstance == null)
