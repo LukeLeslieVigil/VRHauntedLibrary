@@ -54,18 +54,11 @@ public class GhostSight : MonoBehaviour
             if (angle < FOVAngle * 0.5f)
             {
                 Debug.Log("In range");
-                RaycastHit hit;
-
-                if (Physics.SphereCast(transform.position + transform.up, 2f, direction.normalized, out hit, col.radius))
-                {
-                    if (hit.collider.gameObject == player)
-                    {
-                        playerInSight = true;
-                        lastPlayerSighting.position = player.transform.position;
-                        Debug.DrawLine(transform.position + transform.up, player.transform.position, Color.red);
-                        ghostAI.Chasing();
-                    }
-                }
+                
+                playerInSight = true;
+                lastPlayerSighting.position = player.transform.position;
+                Debug.DrawLine(transform.position + transform.up, player.transform.position, Color.red);
+                ghostAI.Chasing();
             }
         }
     }

@@ -25,4 +25,5 @@ public class ExitKey : MonoBehaviour
         GetComponent<XROffsetGrabInteractable>().colliders.Clear();
         Destroy(this.gameObject);
     }
+
 }
