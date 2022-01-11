@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6315024626365121832}
   - component: {fileID: 7258756554865152646}
   - component: {fileID: 5948585911156370767}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pPlane1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 3093875853561303825}
   - component: {fileID: 1591609918541456474}
   - component: {fileID: 2147087890755339228}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BookM1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
