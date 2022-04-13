@@ -11,6 +11,7 @@ TagManager:
   - Flashlight
   - ExitDoors
   - SoundManager
+  - GhostEnemy
   layers:
   - Default
   - TransparentFX
