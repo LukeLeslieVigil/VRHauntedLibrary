@@ -17,8 +17,8 @@ public class BanishGhost : MonoBehaviour
             Debug.Log("Banished Ghost");
             Ghost = other.gameObject;
             Ghost.SetActive(false);
-            ThisObject.SetActive(false);
             Invoke("EnableGhost", DisableTime);
+            ThisObject.SetActive(false);
         }
     }
 

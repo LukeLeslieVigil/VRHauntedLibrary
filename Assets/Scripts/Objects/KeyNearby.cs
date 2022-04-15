@@ -24,6 +24,6 @@ public class KeyNearby : MonoBehaviour
     {
         soundManager.PlayOneShot(soundManager.keyNearbyClip);
         Debug.Log("Key sound should play");
-        soundZone.enabled = false;
+        //soundZone.enabled = false;
     }
 }
