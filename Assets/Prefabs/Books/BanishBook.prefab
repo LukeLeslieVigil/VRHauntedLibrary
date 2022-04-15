@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2214608701378914273}
   - component: {fileID: 3289016625306349647}
   - component: {fileID: 1175489755975877066}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pPlane1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,6 +96,36 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7629811779324647873, guid: e648e47427846a846ba4fe6d58295d82, type: 3}
+--- !u!1 &7100708798145237549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2278292999131947722}
+  m_Layer: 10
+  m_Name: Transform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2278292999131947722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7100708798145237549}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.0844, y: 0, z: -0.022}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7203226280648880600}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &7547136391728458594
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,8 +138,8 @@ GameObject:
   - component: {fileID: 4587030491333634330}
   - component: {fileID: 3060717325855196294}
   - component: {fileID: 3060717325855196295}
-  - component: {fileID: 3060717325855196293}
-  m_Layer: 0
+  - component: {fileID: 2486697587766688523}
+  m_Layer: 10
   m_Name: BanishBook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,6 +158,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8659014778232103096}
+  - {fileID: 2278292999131947722}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -144,6 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DisableTime: 5
+  ThisObject: {fileID: 0}
 --- !u!54 &3060717325855196294
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -173,7 +205,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.25
   m_Center: {x: -0.06, y: 0.1, z: -0.02}
---- !u!114 &3060717325855196293
+--- !u!114 &2486697587766688523
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -215,15 +247,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_CustomReticle: {fileID: 0}
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 2278292999131947722}
   m_AttachEaseInTime: 0.15
   m_MovementType: 1
   m_TrackPosition: 1
-  m_SmoothPosition: 0
+  m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
   m_TrackRotation: 1
-  m_SmoothRotation: 0
+  m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
   m_ThrowOnDetach: 1
