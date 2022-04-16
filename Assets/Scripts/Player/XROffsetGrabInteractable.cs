@@ -5,7 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class XROffsetGrabInteractable : XRGrabInteractable
 {
-    private Vector3 initialAttachLocalPos;
+    /*private Vector3 initialAttachLocalPos;
     private Quaternion initialAttachLocalRot;
 
     void Start()
@@ -35,5 +35,5 @@ public class XROffsetGrabInteractable : XRGrabInteractable
         }
 
         base.OnSelectEnter(interactor);
-    }
+    }*/
 }
